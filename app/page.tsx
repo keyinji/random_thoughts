@@ -1,4 +1,5 @@
 import { revalidateTag } from "next/cache";
+import Link from "next/link";
 
 export interface Text {
   id?: number;
@@ -75,6 +76,7 @@ export default async function Home() {
           </div>
         ))}
       </div>
+      <Link href='/hello'>Fetch data test</Link>
     </div>
   );
 }
